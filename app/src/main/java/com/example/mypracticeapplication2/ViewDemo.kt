@@ -12,11 +12,11 @@ class ViewDemo(context: Context): View(context){
     var x = 30
     var y = 30
     override fun onDraw(canvas: Canvas) {
-        canvas.drawColor(Color.BLACK)
+        canvas.drawColor(Color.YELLOW)
         paint.color = Color.GREEN
         canvas.drawRect(0f+x, 1800f-y, 400f+x, 2100f-y, paint)
         paint.color = Color.RED
-        canvas.drawRect(800f-x, 1800f-y, 1200f-x, 2100f-y, paint)
+        canvas.drawRect(650f-x, 1800f-y, 1050f-x, 2100f-y, paint)
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
